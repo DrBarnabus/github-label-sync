@@ -1,0 +1,37 @@
+{
+  "name": "@drbarnabus/github-label-sync",
+  "version": "1.0.0",
+  "description": "Syncs labels with your GitHub Repository",
+  "main": "lib/main.js",
+  "scripts": {
+    "build": "tsc && ncc build lib/main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DrBarnabus/github-label-sync.git"
+  },
+  "keywords": [
+    "github",
+    "actions",
+    "label",
+    "sync"
+  ],
+  "author": "DrBarnabus",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DrBarnabus/github-label-sync/issues"
+  },
+  "homepage": "https://github.com/DrBarnabus/github-label-sync#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.6",
+    "@actions/github": "^4.0.0",
+    "js-yaml": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/js-yaml": "^4.0.0",
+    "@types/node": "^14.14.35",
+    "@vercel/ncc": "^0.27.0",
+    "typescript": "^4.2.3"
+  }
+}

@@ -1,0 +1,14 @@
+name: 'Label Sync'
+description: 'Synchronizes labels from a file to a GitHub Repository.'
+author: 'DrBarnabus'
+inputs:
+  repo-token:
+    description: 'The GITHUB_TOKEN secret'
+  configuration-path:
+    description: 'The path labels configuration file'
+    default: '.github/label-sync.yml'
+    required: false
+
+runs:
+  using: 'node15'
+  main: 'dist/index.js'

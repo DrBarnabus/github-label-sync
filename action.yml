@@ -8,6 +8,12 @@ inputs:
     description: 'The path labels configuration file'
     default: '.github/label-sync.yml'
     required: false
+  owner:
+    description: 'The owner of the target repository'
+    required: true
+  repo:
+    description: 'The name of the target repository'
+    required: true
 
 runs:
   using: 'node15'
